@@ -23,6 +23,7 @@ nav {
     justify-content: space-between;
     margin: 0;
     padding: 0;
+    z-index: 1;
 }
 
 a {
@@ -66,6 +67,7 @@ nav ul li {
     text-align: center;
     border-left: rgb(255, 255, 255,0) solid 1px;
     border-right: rgba(255, 255, 255, 0) solid 1px;
+    transition: 0.3s;
 }
 
 nav ul li a {
@@ -79,6 +81,7 @@ nav ul li:hover {
     background-color: black;
     border-left: #fff solid 1px;
     border-right: #fff solid 1px;
+    transition: 0.3s;
 }
 
 .corps_accueil {
@@ -129,10 +132,15 @@ h2 {
                 0 8px 8px hsl(0deg 0% 0% / 0.075),
                 0 16px 16px hsl(0deg 0% 0% / 0.075);
     border-radius: 4em;
+    opacity: 0.6;
+    transition: 0.3s;
+    z-index: 0;
 }
 
 .zone .gallery_ex_emploi:hover {
+    cursor: default;
     border: 2px solid rgb(203, 72, 57);
+    opacity: 1;
 }
 
 .zone div .gallery_ex_emploi img {
