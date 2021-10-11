@@ -87,6 +87,7 @@ nav ul li:hover {
 .corps_accueil {
     width: 1000px;
     margin: auto;
+    padding: -53;
     /* background-color: #fff; */
 }
 
