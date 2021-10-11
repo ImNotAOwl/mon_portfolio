@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Poppins:wght@300;500&display=swap');
+
+html {
+    overflow: scroll;
+    scroll-behavior: smooth; /* défilement doux quand on appuie sur un bouton de la navbar, obligé le l'appliquer sur tout le html */
+}
+
+body {
+    background-color: #fff;
+    margin: 0;
+}
+
+nav {
+    background: url("../assets/img/banniere_portfolio_accueil.jpg") 70%;
+    font-family: Josephin, sans-serif;
+    position: sticky;
+    top: 0;
+    border-bottom: rgb(0, 183, 255) solid 3px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-family: Josephin, sans-serif;
+}
+
+p {
+    font-family: Poppins, sans-serif;
+    font-size: 1em;
+    text-align: justify; 
+}
+
+nav h1 {
+    
+    margin: 0 0 0 20px;
+    color: #fff;
+    margin-left: 15%;
+    cursor: pointer;
+}
+
+nav h1 a {
+    display: block;
+    color: #fff;
+    padding: 11px 15px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    margin-right: 20%;
+}
+
+nav ul li {
+    color: #fff;
+    text-align: center;
+    border-left: rgb(255, 255, 255,0) solid 1px;
+    border-right: rgba(255, 255, 255, 0) solid 1px;
+}
+
+nav ul li a {
+    color: #fff;
+    display: block;
+    padding: 16px 20px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    background-color: black;
+    border-left: #fff solid 1px;
+    border-right: #fff solid 1px;
+}
+
+.corps_accueil {
+    width: 1000px;
+    margin: auto;
+    
+}
+
+.corps_accueil header h1 {
+    font-size: 5vw;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+
+header p {
+    font-family: Poppins, sans-serif;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.zone {
+    padding-top: 53px;
+    height: 90vh;     /* vh=Viewport Height, défini la hauteur de la vue, ici pour descendre de volet en volet */
+}
+
+h2 {
+    font-size: 3.5vw;
+    margin: 0;
+}
+
+.ancien_parcours {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: stretch;
+}
+
+.zone div .gallery_ex_emploi {
+    margin: 5px;
+    border: 2px solid #ccc;
+    width: 300px;
+    height: 556px;
+    box-shadow: 2px 2px;
+    /* border-radius: 5% 5% 5% 5%; */
+}
+
+.zone .gallery_ex_emploi:hover {
+    border: 2px solid rgb(203, 72, 57);
+}
+
+.zone div .gallery_ex_emploi img {
+    width: 300px;
+    height: 100px;
+    margin: 0;
+    /* border-radius: 10% 5% 0 0; */
+}
+
+.zone div .gallery_ex_emploi .description {
+    padding: 8px;
+    text-align: justify;
+    margin: 0;
+}
+
