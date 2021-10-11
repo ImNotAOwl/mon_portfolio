@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    background-color: #fff;
+    background-color: #ccc;
     margin: 0;
 }
 
@@ -84,7 +84,7 @@ nav ul li:hover {
 .corps_accueil {
     width: 1000px;
     margin: auto;
-    
+    /* background-color: #fff; */
 }
 
 .corps_accueil header h1 {
@@ -118,12 +118,17 @@ h2 {
 }
 
 .zone div .gallery_ex_emploi {
+    background-color: #fff;
     margin: 5px;
     border: 2px solid #ccc;
     width: 300px;
     height: 556px;
-    box-shadow: 2px 2px;
-    /* border-radius: 5% 5% 5% 5%; */
+    box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+                0 2px 2px hsl(0deg 0% 0% / 0.075),
+                0 4px 4px hsl(0deg 0% 0% / 0.075),
+                0 8px 8px hsl(0deg 0% 0% / 0.075),
+                0 16px 16px hsl(0deg 0% 0% / 0.075);
+    border-radius: 4em;
 }
 
 .zone .gallery_ex_emploi:hover {
@@ -134,7 +139,8 @@ h2 {
     width: 300px;
     height: 100px;
     margin: 0;
-    /* border-radius: 10% 5% 0 0; */
+    border-radius: 4em 4em 0 0;
+    border-bottom: 2px solid #fff;
 }
 
 .zone div .gallery_ex_emploi .description {
