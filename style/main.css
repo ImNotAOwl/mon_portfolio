@@ -145,7 +145,7 @@ h2 {
 
 .zone .gallery_ex_emploi:hover {
     cursor: default;
-    border-bottom: 4px solid rgb(240, 237, 68);
+    border-bottom: 4px solid rgb(240, 237, 68, 0.8);
     opacity: 1;
 }
 
@@ -161,11 +161,26 @@ h2 {
 }
 
 .zone div .gallery_ex_emploi .description {
-    padding: 8px;
-    text-align: justify;
-    margin: 0;
-    font-size: 15px;
+    padding: 0;
+    font-family: Poppins, sans-serif;
 }
+
+
+.zone div .gallery_ex_emploi .description li {
+    position: relative;
+    padding: 3px;
+    text-align: left;
+    margin-left: 5px;
+    font-size: 15px;
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+.zone div .gallery_ex_emploi .description li::before {
+    content: "-";
+    position: absolute;
+}
+
 
 
 
