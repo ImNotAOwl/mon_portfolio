@@ -129,7 +129,7 @@ h2 {
     background-color: #fff;
     margin: 5px;
     border-top: 2px solid rgb(187, 52, 52);
-    border-bottom: 4px solid rgb(187, 52, 52, 0);
+    border-bottom: 5px solid rgb(187, 52, 52, 0);
     width: 31%;
     min-height: 200px;
     box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
@@ -145,12 +145,21 @@ h2 {
 
 .zone .gallery_ex_emploi:hover {
     cursor: default;
-    border-bottom: 4px solid rgb(240, 237, 68, 0.8);
+    border-bottom: 5px solid rgb(251, 197, 49);
+    
+
+
+    /* border-image: 
+            linear-gradient(
+                to top,
+                #fbc531, 
+                  rgb(251, 197, 49),
+                rgba(0,0,0,0)
+            ) 2 / 3px; */
     opacity: 1;
 }
 
 .zone div .gallery_ex_emploi img {
-    /* position: relative; */
     width: 124px;
     height: 62px;
     margin-right: 12px;
@@ -168,7 +177,7 @@ h2 {
 
 .zone div .gallery_ex_emploi .description li {
     position: relative;
-    padding: 3px;
+    padding: 3px 10px 10px 25px;
     text-align: left;
     margin-left: 5px;
     font-size: 15px;
@@ -179,6 +188,8 @@ h2 {
 .zone div .gallery_ex_emploi .description li::before {
     content: "-";
     position: absolute;
+    margin-left: 8px;
+    left: 0;
 }
 
 
