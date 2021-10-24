@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Poppins:wght@300;500&display=swap');
 
+@property --radius {
+    syntax: '<length>';
+    inherits: true;
+    initial-value: 0;
+  }
+
 html {
     overflow: scroll;
     scroll-behavior: smooth; /* défilement doux quand on appuie sur un bouton de la navbar, obligé le l'appliquer sur tout le html */
@@ -42,7 +48,6 @@ p {
 }
 
 nav h1 {
-    
     margin: 0 0 0 20px;
     color: #fff;
     margin-left: 15%;
@@ -64,11 +69,17 @@ nav ul {
 }
 
 nav ul li {
-    color: #fff;
+    color: #000;
     text-align: center;
     border-left: rgb(255, 255, 255,0) solid 1px;
     border-right: rgba(255, 255, 255, 0) solid 1px;
     transition: 0.3s;
+    /* margin:-10px 0; */
+    line-height:2em;
+    --path:100% -20px 0,100% 15px,0 15px 10px,0 calc(100% - 15px) 10px,100% calc(100% - 15px), 100% calc(100% + 20px) 0;
+    --radius:30px;
+    --t:0;
+    mask:paint(rounded-shape);
 }
 
 nav ul li a {
