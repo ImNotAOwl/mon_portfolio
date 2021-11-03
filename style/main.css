@@ -289,7 +289,7 @@ h2 {
 
 .skills .bar {
     display: block;
-    background-color: rgba(187, 52, 52, 0.384);
+    background-color: rgba(187, 52, 52, 0.219);
     height: 10px;
     border: rgb(187, 52, 52) 2px solid;
     border-radius: 100em;
@@ -306,31 +306,31 @@ h2 {
 
 .skills .bar .html {
     width: 70%;
-    background-color: rgba(235, 215, 39, 0.836);
+    background-color: #f16524;
     animation: htmlcss 2s;
 }
 
 .skills .bar .css {
     width: 70%;
-    background-color: rgb(0, 183, 255);
+    background-color: #0396e0;
     animation: htmlcss 2s;
 }
 
 .skills .bar .php {
     width: 65%;
-    background-color: rgba(13, 33, 209, 0.747);
+    background-color: #4f5b93;
     animation: php 2s;
 }
 
 .skills .bar .git {
     width: 80%;
-    background-color: rgba(67, 7, 136, 0.815);
+    background-color: #6e5494;
     animation: git 2s;
 }
 
 .skills .bar .javascript {
     width: 10%;
-    background-color: rgb(204, 114, 11);
+    background-color: #fcda00;
     animation: javascript 2s;
 }
 
