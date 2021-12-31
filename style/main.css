@@ -54,6 +54,8 @@ p {
     text-align: justify; 
 }
 
+/* ----------------NAV BAR------------------------ */
+
 nav h1 {
     margin: 0 0 0 20px;
     color: #fff;
@@ -98,28 +100,36 @@ nav ul li:hover {
 }
 
 .content {
+    position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: flex-end;
     min-height: 100%;
 }
 
-.content .zone_gauche {
+/* .content .zone_gauche {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: flex-start;
     min-width: 20%;
     top: 0;
-}
+} */
 
-.content .zone_gauche .social{
+/* ----------------Icones social media------------------------ */
+
+.content .social{
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     position: fixed;
-    margin-top: 50px;
-    margin-right: 30px;
+    right: 30px;
+    bottom: 30px;
+    gap: 5px;
+  
 }
 
-.content .zone_gauche .social svg {
+.content .social svg {
     height: 40px;
     width: 40px;
     padding: 7px;
@@ -130,9 +140,9 @@ nav ul li:hover {
     transition: ease-in-out 0.1s;
 }
 
-.content .zone_gauche .social a {
-    height: 56px;
-    width: 56px;
+.content .social a {
+    height: 50px;
+    width: 50px;
     margin-bottom: 8px;
     border-radius: 100%;
     box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
@@ -142,7 +152,7 @@ nav ul li:hover {
                 0 16px 16px hsl(0deg 0% 0% / 0.075);
 }
 
-.content .zone_gauche .social a svg:hover {
+.content .social a svg:hover {
     height: 40px;
     width: 40px;
     padding: 7px;
@@ -152,33 +162,39 @@ nav ul li:hover {
     fill : #ffffff;   
 }
 
-.content .zone_gauche .social a #fb:hover {
+.content .social a #fb:hover {
     background-color: #3b5999;
 }
 
-.content .zone_gauche .social a #github:hover {
+.content .social a #github:hover {
     background-color: #6e5494;
 }
 
-.content .zone_gauche .social a #insta:hover {
+.content .social a #insta:hover {
     background-color: #e4405f;
 }
 
-.content .zone_gauche .social a #linkedin:hover {
+.content .social a #linkedin:hover {
     background-color: #0077b5;
 }
 
+/* ----------------ACCUEIL HOMEPAGE------------------------ */
 
 .content .zone_droite {
     display: flex;
     flex-direction: column;
     min-width: 80%;
-    align-items: flex-start;
+    align-items: center;
 }
 
-.zone {
-    width: 1100px;
+#top_accueil {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    min-height: 85vh;
+    background-image: url('../assets/img/photo_accueil_portfolio.jpg');
+    width: 100%;
 }
+
 
 #accueil {
     padding: 0;
@@ -198,13 +214,16 @@ header p {
 
 .zone {
     padding-top: 70px;
-    height: 90vh;     /* vh=Viewport Height, défini la hauteur de la vue, ici pour descendre de volet en volet */
+    width: 1300px;
+    /* height: 90vh;     vh=Viewport Height, défini la hauteur de la vue, ici pour descendre de volet en volet */
 }
 
 h2 {
     font-size: 3.5vw;
     margin: 0;
 }
+
+/* ----------------PARCOURS PRO------------------------ */
 
 .ancien_parcours {
     display: flex;
@@ -275,6 +294,8 @@ h2 {
     left: 0;
 }
 
+/* ----------------COMPETENCES------------------------ */
+
 .skills {
     font-family: Poppins, sans-serif;
     width: 600px;
@@ -333,6 +354,8 @@ h2 {
     background-color: #fcda00;
     animation: javascript 2s;
 }
+
+/* ----------------ANIMATION BAR COMPETENCES------------------------ */
 
 @keyframes htmlcss {
     0% {
