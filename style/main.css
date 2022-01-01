@@ -107,15 +107,6 @@ nav ul li:hover {
     min-height: 100%;
 }
 
-/* .content .zone_gauche {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    min-width: 20%;
-    top: 0;
-} */
-
 /* ----------------Icones social media------------------------ */
 
 .content .social{
@@ -180,36 +171,34 @@ nav ul li:hover {
 
 /* ----------------ACCUEIL HOMEPAGE------------------------ */
 
-.content .zone_droite {
-    display: flex;
-    flex-direction: column;
-    min-width: 80%;
-    align-items: center;
-}
-
-#top_accueil {
-    padding-top: 80px;
-    padding-bottom: 80px;
-    min-height: 85vh;
-    background-image: url('../assets/img/photo_accueil_portfolio.jpg');
-    width: 100%;
-}
-
 
 #accueil {
     padding: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    min-height: 85vh;
+    background-image: url('../assets/img/photo_accueil_portfolio2.jpg');
+    width: 100%;
+    color:rgb(230, 230, 230);
 }
 
-.zone header h1 {
+#accueil h1 {
     font-size: 5vw;
     margin-top: 2%;
     margin-bottom: 4%;
 }
 
-header p {
+#accueil p {
     font-family: Poppins, sans-serif;
     font-size: 1.5em;
     text-align: justify;
+}
+
+.content .zone_droite {
+    display: flex;
+    flex-direction: column;
+    min-width: 80%;
+    align-items: center;
 }
 
 .zone {
