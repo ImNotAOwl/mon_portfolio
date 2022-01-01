@@ -29,7 +29,7 @@ nav {
     font-family: Josephin, sans-serif;
     position: sticky;
     top: 0;
-    border-bottom: rgb(0, 183, 255) solid 3px;
+    border-bottom: rgb(255, 255, 255) solid 1px;
     width: auto;
     display: flex;
     flex-wrap: wrap;
@@ -37,6 +37,7 @@ nav {
     justify-content: space-between;
     margin: 0;
     padding: 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     z-index: 1;
 }
 
@@ -44,13 +45,13 @@ a {
     text-decoration: none;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: Josephin, sans-serif;
 }
 
 p {
     font-family: Poppins, sans-serif;
-    font-size: 1em;
+    font-size: 1.3em;
     text-align: justify; 
 }
 
@@ -69,22 +70,27 @@ nav h1 a {
     padding: 11px 15px;
 }
 
+nav h1 a:hover {
+    color: #fbc531;
+}
+
+
 nav ul {
     display: flex;
     align-items: center;
     list-style-type: none;
     margin: 0;
-    margin-right: 20%;
+    margin-right: 10%;
 }
 
-nav ul li {
+/* nav ul li {
     color: #000;
     text-align: center;
     border-left: rgb(255, 255, 255,0) solid 1px;
     border-right: rgba(255, 255, 255, 0) solid 1px;
     transition: 0.3s;
 }
-
+ */
 nav ul li a {
     color: #fff;
     display: block;
@@ -92,10 +98,8 @@ nav ul li a {
     cursor: pointer;
 }
 
-nav ul li:hover {
-    background-color: black;
-    border-left: #fff solid 1px;
-    border-right: #fff solid 1px;
+nav ul li:hover a{
+    color: #fbc531;
     transition: 0.3s;
 }
 
@@ -172,23 +176,40 @@ nav ul li:hover {
 /* ----------------ACCUEIL HOMEPAGE------------------------ */
 
 
-#accueil {
-    padding: 0;
+#top_accueil {
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 45px;
     min-height: 85vh;
     background-image: url('../assets/img/photo_accueil_portfolio2.jpg');
     width: 100%;
     color:rgb(230, 230, 230);
 }
 
-#accueil h1 {
-    font-size: 5vw;
-    margin-top: 2%;
-    margin-bottom: 4%;
+#accueil {
+    margin-left: 100px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
-#accueil p {
+header h1 {
+    font-size: 5vw;
+    margin-top: 2%;
+    margin-bottom: 3%;  
+}
+
+header h3 {
+    background-color: #e37a604d;
+    font-size: 2.5vw;
+    margin: 0;
+    color:palegoldenrod;
+    border:1px solid palegoldenrod;
+    padding-right: 2px;
+}
+
+header p, h3 {
     font-family: Poppins, sans-serif;
     font-size: 1.5em;
     text-align: justify;
@@ -212,8 +233,56 @@ h2 {
     margin: 0;
 }
 
+/* ----------------A PROPOS DE MOI------------------------ */
+
+.a_propos_container {
+    display: flex;
+    flex-direction: column;
+    min-width: 80%;
+    align-items: center;
+    background-color: #c0554f;
+    width: 100%;
+}
+
+#a_propos {
+    padding-top: 60px;
+color: #e6e6e6;
+}
+
+#a_propos p .exergue {
+    padding: 3px;
+    text-decoration: underline;
+    color:palegoldenrod;
+    /* border:1px solid palegoldenrod; */
+    /* background-color: #e37a604d; */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#apropos_projet_pro {
+    display: inline-block;
+    padding: 5px 0 5px 10px;
+    margin: 15px 0 15px 0;
+    /* text-decoration: underline; */
+    /* color:rgb(0, 0, 0); */
+    text-transform: uppercase;
+    border:1px solid #eee8aa;
+    background-color: #eee8aa3b;
+    min-width: 550px;
+}
 
 /* ----------------PARCOURS PRO------------------------ */
+.parcours_pro_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../assets/img/border_up_parcour_pro.svg);
+    width: 100%;
+}
+
+#parcours_pro {
+    margin-top: 100px;
+}
 
 .ancien_parcours {
     display: flex;
@@ -249,7 +318,7 @@ h2 {
 .zone .gallery_ex_emploi:hover {
     cursor: default;
     opacity: 1;
-    background: linear-gradient(to bottom, rgb(255, 255, 255) 72%, rgba(251, 197, 49) 100%);
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 72%, #fbc531 100%);
         /* fait un dégradé du background de haut en bas qui fini sur du jaune. Les % permettent de définir jusqu'ou va le blanc et le jaune */
     transform: translateY(-7px);
 }
@@ -272,7 +341,7 @@ h2 {
     padding: 2px 10px 10px 25px;
     text-align: left;
     margin-left: 5px;
-    font-size: 15px;
+    font-size: 18px;
     list-style-type: none;
     list-style-position: inside;
 }
