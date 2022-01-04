@@ -38,7 +38,7 @@ nav {
   margin: 0;
   padding: 0;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  z-index: 1;
+  z-index: 10;
 }
 
 a {
@@ -124,6 +124,7 @@ nav ul li:hover a {
   right: 30px;
   bottom: 30px;
   gap: 5px;
+  z-index: 9;
 }
 
 .content .social svg {
@@ -284,7 +285,7 @@ h2 {
 
 #parcours_pro {
   margin-top: 100px;
-  padding: 70px 0 0 0;
+  /* padding: 70px 0  0; */
 }
 
 #parcours_pro .intro,
@@ -388,27 +389,55 @@ h2 {
   left: 0;
 }
 
+#btn_synthese {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px solid rgb(187, 52, 52);
+  color:rgb(187, 52, 52);
+  border-radius: 2em;
+  transition: ease-out 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+#btn_synthese:hover {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-top: 20px;
+  padding: 15px;
+  border: 2px solid rgb(187, 52, 52);
+  color: #ffeedd;
+  border-radius: 2em;
+  background-color: rgb(187, 52, 52);
+  transition: ease-in-out 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
 /* ----------------------------------COMPETENCES------------------------ */
-.border_up_skills {
-    display: flex;
-    content: "";
-    flex-direction: column;
-    align-items: center;
+#border_up_skills {
     width: 100%;
     height: 210px;
-    background: url(../assets/img/border_up_skills.png);
+    background: url(../assets/img/border_up_skills2.png);
+    z-index: 2;
 }
 
 .competences_container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #c0553f;
-    width: 100%
-}
+    justify-content: center;
+    background-color: #17bebbc7;
+    width: 100%;
+    height: auto;
+  }
 
 #competences {
-    padding-top: 0;
+    padding: 50px 0 30px 0;
+}
+
+#competences h2 {
+  margin-bottom: 50px;
 }
 
 #competences .skills {
@@ -418,7 +447,6 @@ h2 {
   align-items: center;
   justify-content: center;
   margin: 20px 20px;
-/* margin-top: 80px; */
 }
 
 #competences .skills .skill {
@@ -429,8 +457,11 @@ h2 {
   width: 10rem;
   height: 10rem;
   margin: 10px 20px;
-  border: 2px solid greenyellow;
+  border: 3px solid rgb(187, 52, 52);
   border-radius: 50%;
+  background-color: #ffeedd;
+  box-shadow: rgba(60, 64, 67, 0.3) 6px -6px 2px 0px, 
+            rgba(60, 64, 67, 0.15) 8px -8px 6px 2px;
 }
 
 #competences .skills .skill img {
@@ -441,6 +472,14 @@ h2 {
 #competences .skills .skill h4 {
   font-size: 1.3em;
   margin: 10px 0;
+  color: black;
+}
+
+#border_down_skills {
+  width: 100%;
+  height: 210px;
+  background: url(../assets/img/border_down_skills2.png);
+  z-index: 2;
 }
 
 /*--------------------------BAR DE COMPETENCES-------------------------- */
@@ -547,5 +586,5 @@ h2 {
     align-items: center;
     width: 100%;
     height: auto;
-    background: url(../assets/img/border_down_skills.png);
+    /* background: url(../assets/img/border_down_skills.png); */
 }
