@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz JS</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <h1 class="titre">Quizz Culture générale !</h1>
+
+    <div class="container">
+        <form class="quizz">
+            <div class="box_qst">
+                <h3 class="qst">Qui est l'empereur de France le 2 décembre 1804 ?</h3>
+                <div>
+                    <input type="radio" value="clovis" id="clovis" name="qst1">
+                    <label for="clovis">Clovis</label>
+                </div>
+                <div>
+                    <input type="radio" value="lincoln" id="lincoln" name="qst1">
+                    <label for="lincoln">Abraham Lincoln</label>
+                </div>
+                <div>
+                    <input type="radio" value="napoleon" id="napoleon" name="qst1" checked>
+                    <label for="napoleon">Napoleon Bonaparte</label>
+                </div>
+            </div>
+            <div class="box_qst">
+                <h3 class="qst">Quelle est la date d'indépendance des États-Unis ?</h3>
+                <div>
+                    <input type="radio" value="juillet" id="juillet" name="qst2" checked>
+                    <label for="juillet">4 juillet 1776</label>
+                </div>
+                <div>
+                    <input type="radio" value="avril" id="avril" name="qst2">
+                    <label for="avril">18 avril 1856</label>
+                </div>
+                <div>
+                    <input type="radio" value="juin" id="juin" name="qst2">
+                    <label for="juin">30 juin 1925</label>
+                </div>
+            </div>
+            <div class="box_qst">
+                <h3 class="qst">La chute de l'empire Romain se situe en ?</h3>
+                <div>
+                    <input type="radio" value="15" id="15" name="qst3">
+                    <label for="15">15 ap. J.-C.</label>
+                </div>
+                <div>
+                    <input type="radio" value="395" id="395" name="qst3" checked>
+                    <label for="395">395 ap. J.-C.</label>
+                </div>
+                <div>
+                    <input type="radio" value="740" id="740" name="qst3">
+                    <label for="740">-740 av. J.-C.</label>
+                </div>
+            </div>
+            <div class="box_qst">
+                <h3 class="qst">Quelle est la capitale de la Slovénie ?</h3>
+                <div>
+                    <input type="radio" value="ljubljana" id="ljubljana" name="qst4" checked>
+                    <label for="ljubljana">Ljubljana</label>
+                </div>
+                <div>
+                    <input type="radio" value="belgrade" id="belgrade" name="qst4">
+                    <label for="belgrade">Belgrade</label>
+                </div>
+                <div>
+                    <input type="radio" value="bratislava" id="bratislava" name="qst4">
+                    <label for="bratislava">Bratislava</label>
+                </div>
+            </div>
+            <div class="box_qst">
+                <h3 class="qst">Combien d'habitants compte l'Irlande en 2020 ?</h3>
+                <div>
+                    <input type="radio" value="1m" id="1m" name="qst5">
+                    <label for="1m">1,365 Million</label>
+                </div>
+                <div>
+                    <input type="radio" value="21m" id="21m" name="qst5">
+                    <label for="21m">21 Millions</label>
+                </div>
+                <div>
+                    <input type="radio" value="4m" id="4m" name="qst5" checked>
+                    <label for="4m">4,9 Millions</label>
+                </div>
+            </div>
+            <input type="button" value="C'est votre dernier mot ?" id="btn_envoyer">
+        </form>
+
+        <div class="resultat">
+            <h2>Cliquez sur le bouton pour voir les résultats !</h2>
+            <p id="aide"></p>
+            <p id="note"></p>
+        </div>
+    </div>
+
+    
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    margin-bottom: 4%;
+    /* width: 50%; */
+    /* margin: auto; */
+}
+
+.container {
+    width: 70%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.titre {
+    font-family: Russo One, sans-serif;
+    font-weight: 100;
+    text-align: center;
+    margin: 2% 0;
+    font-size: 3em;
+}
+
+.quizz {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: stretch;
+}
+
+.box_qst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    margin: 20px;
+    padding: 1.7rem;
+    border: 1px solid rgba(224, 135, 19, 0.479);
+    border-radius: 0.8em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 100%;
+}
+
+.qst {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.box_qst > div {
+    display: flex;
+    align-items: center;
+    margin: 0.7% 0;
+}
+
+.box_qst > div > input {
+    width: 20px;
+    height: 20px;
+}
+
+.box_qst > div > label {
+    font-size: 1.4em;
+    margin-left: 1%;
+}
+
+#btn_envoyer {
+    border: none;
+    outline: none;
+    margin: 4% 0;
+    border: 1px solid #333;
+    align-self: center;
+    font-size: 2em;
+    padding: 1%;
+    border-radius: 0.2em;
+    transition: 0.4s ease-out;
+    width: 60%;
+    height: 50%;
+}
+
+#btn_envoyer:hover {
+    cursor: pointer;
+    margin: 4% 0;
+    align-self: center;
+    font-size: 2em;
+    padding: 1%;
+    border-radius: 0.2em;
+    background-color: rgba(224, 135, 19, 0.479);
+    color: rgb(255, 255, 255);
+    transition: 0.2s ease-in;
+}
+
+.resultat {
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 5%;
+    padding: 2rem;
+    border: 1px solid rgba(224, 135, 19, 0.479);
+    border-radius: 0.4em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* width: fit-content; */
+}
+
+#aide {
+    font-size: 1.5em;
+    margin-top: 2%;
+}
+
+#note {
+    font-size: 1.5em;
+    margin-top: 2%;
+}
+
+.correct {
+    background-color: rgba(27, 236, 55, 0.527);
+}
+
+.false {
+    animation: nonAnim 0.4s ease-in-out;
+}
+
+@keyframes nonAnim {
+    0% {
+        transform: translateX(-5px);
+    }
+    25% {
+        transform: translateX(5px);
+    }
+    50% {
+        transform: translateX(-5px);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.tout_juste {
+    animation: clignotte 1s ease-in-out;
+}
+
+@keyframes clignotte {
+    0% { 
+        background-color: rgba(255, 211, 100, 0.534);
+        opacity: 1;
+    }
+    25% {
+        background-color: rgba(255, 211, 100, 0.534);
+        opacity: 0.2;
+    }
+    50% {
+        background-color: rgba(255, 211, 100, 0.534);
+        opacity: 1;
+    }
+    75% {
+        background-color: rgba(255, 211, 100, 0.534);
+        opacity: 0.2;
+    }
+    100% {
+        background-color: rgba(255, 211, 100, 0.534);
+        opacity: 1;
+    }
+    
+}
