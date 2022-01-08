@@ -82,8 +82,6 @@ p {
   word-wrap: break-word;
 }
 
-
-
 /* ----------------NAV BAR------------------------ */
 
 nav h1 {
@@ -138,8 +136,6 @@ nav ul li:hover a {
   justify-content: flex-end;
   min-height: 100%;
 }
-
-
 
 /* --------------------------ICONES SOCIAL MEDIA------------------------ */
 
@@ -262,8 +258,6 @@ h2 {
   margin: 0;
 }
 
-
-
 /* ------------------------------A PROPOS DE MOI------------------------ */
 
 .a_propos_container {
@@ -298,8 +292,6 @@ h2 {
   min-width: 450px;
   border-radius: 6px;
 }
-
-
 
 /* ---------------------------------PARCOURS PRO------------------------ */
 .parcours_pro_container {
@@ -441,8 +433,6 @@ h2 {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-
-
 /* ----------------------------------COMPETENCES------------------------ */
 #border_up_skills {
   width: 100%;
@@ -517,8 +507,6 @@ h2 {
   z-index: 2;
 }
 
-
-
 /* --------------------------------PROJETS------------------------ */
 
 .projet_container {
@@ -551,7 +539,7 @@ h2 {
 .projects_cards .card .entete_dossier {
   display: flex;
   flex-direction: row;
-  border: black 2px solid;
+  border: black 1px solid;
   border-bottom: 0;
   border-radius: 1.1em 1.1em 0 0;
   width: fit-content;
@@ -581,10 +569,10 @@ h2 {
   height: 5px;
   background-color: rgb(75, 170, 75);
   box-shadow: 0.5px -0.5px 0.8px hsl(var(--shadow-color2) / 0.09),
-  1.3px -1.3px 2.1px -0.6px hsl(var(--shadow-color2) / 0.09),
-  2.6px -2.5px 4.1px -1.2px hsl(var(--shadow-color2) / 0.09),
-  5.2px -5.1px 8.2px -1.9px hsl(var(--shadow-color2) / 0.09),
-  10.1px -9.8px 15.8px -2.5px hsl(var(--shadow-color2) / 0.09);
+    1.3px -1.3px 2.1px -0.6px hsl(var(--shadow-color2) / 0.09),
+    2.6px -2.5px 4.1px -1.2px hsl(var(--shadow-color2) / 0.09),
+    5.2px -5.1px 8.2px -1.9px hsl(var(--shadow-color2) / 0.09),
+    10.1px -9.8px 15.8px -2.5px hsl(var(--shadow-color2) / 0.09);
 }
 
 .projects_cards .card .entete_dossier .btn_fenetre div:nth-of-type(2) {
@@ -596,10 +584,10 @@ h2 {
   height: 5px;
   background-color: rgb(226, 208, 103);
   box-shadow: 0.5px -0.5px 0.8px hsl(var(--shadow-color2) / 0.09),
-  1.3px -1.3px 2.1px -0.6px hsl(var(--shadow-color2) / 0.09),
-  2.6px -2.5px 4.1px -1.2px hsl(var(--shadow-color2) / 0.09),
-  5.2px -5.1px 8.2px -1.9px hsl(var(--shadow-color2) / 0.09),
-  10.1px -9.8px 15.8px -2.5px hsl(var(--shadow-color2) / 0.09);
+    1.3px -1.3px 2.1px -0.6px hsl(var(--shadow-color2) / 0.09),
+    2.6px -2.5px 4.1px -1.2px hsl(var(--shadow-color2) / 0.09),
+    5.2px -5.1px 8.2px -1.9px hsl(var(--shadow-color2) / 0.09),
+    10.1px -9.8px 15.8px -2.5px hsl(var(--shadow-color2) / 0.09);
 }
 
 .projects_cards .card .entete_dossier .btn_fenetre div:nth-of-type(3) {
@@ -611,10 +599,10 @@ h2 {
   height: 5px;
   background-color: rgb(230, 91, 91);
   box-shadow: 0.5px -0.5px 0.8px hsl(var(--shadow-color2) / 0.09),
-  1.3px -1.3px 2.1px -0.6px hsl(var(--shadow-color2) / 0.09),
-  2.6px -2.5px 4.1px -1.2px hsl(var(--shadow-color2) / 0.09),
-  5.2px -5.1px 8.2px -1.9px hsl(var(--shadow-color2) / 0.09),
-  10.1px -9.8px 15.8px -2.5px hsl(var(--shadow-color2) / 0.09);
+    1.3px -1.3px 2.1px -0.6px hsl(var(--shadow-color2) / 0.09),
+    2.6px -2.5px 4.1px -1.2px hsl(var(--shadow-color2) / 0.09),
+    5.2px -5.1px 8.2px -1.9px hsl(var(--shadow-color2) / 0.09),
+    10.1px -9.8px 15.8px -2.5px hsl(var(--shadow-color2) / 0.09);
 }
 
 .projects_cards .proj_content {
@@ -623,7 +611,7 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: black 2px solid;
+  border: black 1px solid;
   border-radius: 0 1.1em 1.1em 1.1em;
   background-color: rgb(184, 62, 62);
   color: #e6e6e6;
@@ -651,7 +639,6 @@ h2 {
   justify-content: space-around;
   align-items: flex-end;
   flex-wrap: wrap;
-
 }
 
 .projects_cards .proj_content .content_tech .skill {
@@ -680,7 +667,6 @@ h2 {
   height: auto;
 }
 
-
 /* -----------------------------VEILLE TECHNO------------------------ */
 
 .veille_container {
@@ -699,7 +685,7 @@ h2 {
 }
 
 .veille_container .article_veille iframe {
-  width: 1000px; 
+  width: 1000px;
   height: 500px;
   border: rgb(184, 62, 62) 1px solid;
   border-radius: 10px;
@@ -714,4 +700,122 @@ h2 {
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+/* -----------------------------CONTAT FORM------------------------ */
+.contact_border_up {
+  width: 100%;
+  height: 330px;
+  background: url(../assets/img/contact_border_up.png) no-repeat;
+}
+
+.contact_container {
+  width: 100%;
+  color: #e6e6e6;
+  background-color: #b83e3e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact {
+  padding-top: 0;
+}
+
+.contact_content .follow_me {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact_content .follow_me .reseau svg {
+  height: 40px;
+  width: 40px;
+  padding: 7px;
+  fill: #eee8aa;
+}
+
+.contact_content .follow_me .reseau .one_media {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.contact_content .follow_me .reseau .one_media h4 {
+  margin: 0 0 9px 10px;
+  font-size: 1.4em;
+}
+
+.contact_content .follow_me .reseau .one_media > svg {
+  border: 1px black solid;
+}
+
+.contact_container .contact_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: center;
+}
+
+.contact_container .contact_content h3 {
+  margin-bottom: 40px;
+  padding: 3px;
+  text-decoration: underline;
+  color: palegoldenrod;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact_container .contact_content .formulaire {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.contact_container .contact_content .formulaire p {
+  margin: 6px;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.616);
+  padding-left: 10px;
+  z-index: 1;
+  transition: ease-out 0.5s;
+}
+
+.contact_container .contact_content .formulaire label:focus-within p,
+.contact_container .contact_content .formulaire label.active_input p {
+  color: #f1f1f1;
+    font-size: 1.1em;
+    cursor: text;
+    transform: translateY(-35px);
+    transition: ease-in-out 0.5s;
+}
+
+.contact_container .contact_content .formulaire input, textarea {
+  position: relative;
+  min-width: 500px;
+  min-height: 40px;
+  font-size: 1.4em;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color:rgba(255, 255, 255, 0.801);
+}
+
+textarea {
+  font-size: 1.8em;
+}
+
+/* -----------------------------FOOTER------------------------ */
+footer {
+  font-size: 0.7em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b83e3e;
+  color: palegoldenrod;
 }
