@@ -179,20 +179,4 @@ function removeTodo (todo) {
 
     todos.splice(index, 1);                                   //Supprime l'element a l'index recupere.
     localStorage.setItem("todos", JSON.stringify(todos));               //MAJ du JSON avec la tache supprime.
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
