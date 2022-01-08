@@ -94,7 +94,7 @@ function AppelAPI(long, lat) {
                 tempeSemainePro[key].innerText = `${Math.trunc(jourAPI[key + 1].temp.day)}°`;
             });
 
-            if (heureJournee >= 6 && heureJournee < 18) {
+            if (heureJournee >= 6 && heureJournee < 17) {
                 imageInfo.src = `./ressources/jour/${resultatsAPI.current.weather[0].icon}.svg`
                 
             } else {
