@@ -22,12 +22,15 @@
 html {
   overflow-y: scroll;
   scroll-behavior: smooth; /* défilement doux quand on appuie sur un bouton de la navbar, obligé le l'appliquer sur tout le html */
+  overflow-x: hidden;
+
 }
 
 body {
   background-color: #ffeedd;
   margin: 0;
   color: rgb(0, 0, 0);
+  /* overflow: hidden; */
 }
 
 body::-webkit-scrollbar {
@@ -48,7 +51,7 @@ nav {
   font-family: Josephin, sans-serif;
   position: sticky;
   top: 0;
-  border-bottom: rgb(255, 255, 255) solid 1px;
+  /* border-bottom: rgb(255, 255, 255) solid 1px; */
   width: auto;
   display: flex;
   flex-wrap: wrap;
@@ -98,25 +101,19 @@ nav h1 a {
 }
 
 nav h1 a:hover {
-  color: #fffa65;
+  color: #f0c95f;
 }
 
-nav ul {
+nav .nav_menu {
+  position: relative;
   display: flex;
+  flex-direction: row;
   align-items: center;
   list-style-type: none;
   margin: 0;
   margin-right: 10%;
 }
 
-/* nav ul li {
-    color: #000;
-    text-align: center;
-    border-left: rgb(255, 255, 255,0) solid 1px;
-    border-right: rgba(255, 255, 255, 0) solid 1px;
-    transition: 0.3s;
-}
- */
 nav ul li a {
   color: #fff;
   display: block;
@@ -124,9 +121,67 @@ nav ul li a {
   cursor: pointer;
 }
 
-nav ul li:hover a {
-  color: #fffa65;
-  transition: 0.3s;
+.hamburger {
+  display: none;
+}
+
+.hamburger .bar:nth-child(2) {
+  background-color: #f0c95f;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #fff;
+}
+
+.nav_menu li a:after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0px;
+  margin: auto;
+  background: transparent;
+  transition: width .5s ease, background-color .4s ease;
+}
+
+.nav_menu li a:hover:after {
+  width: 100%;
+  background: #f0c95f; 
+  color: #f0c95f;
+}
+
+.nav_menu li.active a:after {
+  width: 100%;
+  background: #f0c95f; 
+  color: #f0c95f;
+}
+
+.nav_menu li.active a {
+  color: #f0c95f;
+  transition: .5s ease;
+}
+
+
+
+.nav_menu li a{
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  height: 23px;
+  margin-bottom: 2px;
+}
+
+.nav_menu li a:hover{
+  height: 23px;
+  font-size: 1.2rem;
+  color: #f0c95f;
+  text-decoration: none;
+  transition: .5s ease-in-out;
 }
 
 .content {
@@ -155,7 +210,7 @@ nav ul li:hover a {
   width: 40px;
   padding: 7px;
   margin-bottom: 8px;
-  border: 1px solid rgb(187, 52, 52);
+  border: 1px solid #bb3434;
   border-radius: 100%;
   background-color: rgb(255, 255, 255);
   transition: ease-in-out 0.1s;

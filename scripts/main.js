@@ -3,6 +3,7 @@ const nom =document.querySelector("#nom");
 const email = document.querySelector("#mail");
 const message = document.querySelector("#message");
 
+
 /*-----------------------Animation Formulaire------------------------ */
 const addActiveInput = (e) => {
     if (e.target.value != "") {
@@ -27,3 +28,32 @@ email.addEventListener('input', (e) => {
 message.addEventListener('input', (e) => {
     addActiveInput(e);
 });
+
+const sections = document.querySelectorAll("section");
+console.log(sections);
+
+const navLi = document.querySelectorAll("nav ul#menu_navbar li");
+console.log(navLi);
+
+
+
+ 
+
+
+    window.addEventListener("scroll", () => {
+        let current = "";
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (scrollY >= sectionTop - sectionHeight / sections.length) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        navLi.forEach( li => {
+            li.classList.remove("active");
+            if (li.classList.contains(current)) {
+                li.classList.add("active");
+            }
+        });
+    });

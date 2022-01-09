@@ -1,0 +1,79 @@
+:root {
+    --shadow-color: 0deg 58% 27%;
+    --shadow-color2: 0deg 0% 0%;
+    --shadow-elevation-low: -0.4px 0.7px 0.9px hsl(var(--shadow-color) / 0.34),
+      -0.6px 1.2px 1.5px -1.2px hsl(var(--shadow-color) / 0.34),
+      -1.5px 2.9px 3.7px -2.5px hsl(var(--shadow-color) / 0.34);
+    --shadow-elevation-medium: -0.4px 0.7px 0.9px hsl(var(--shadow-color) / 0.36),
+      -1.2px 2.4px 3px -0.8px hsl(var(--shadow-color) / 0.36),
+      -3.1px 6px 7.6px -1.7px hsl(var(--shadow-color) / 0.36),
+      -7.5px 14.5px 18.4px -2.5px hsl(var(--shadow-color) / 0.36);
+    --shadow-elevation-high: -0.4px 0.7px 0.9px hsl(var(--shadow-color) / 0.38),
+      -2.5px 4.8px 6.1px -0.4px hsl(var(--shadow-color) / 0.38),
+      -4.8px 9.4px 11.9px -0.8px hsl(var(--shadow-color) / 0.38),
+      -8.4px 16.5px 20.8px -1.2px hsl(var(--shadow-color) / 0.38),
+      -14.4px 28px 35.4px -1.7px hsl(var(--shadow-color) / 0.38),
+      -23.6px 46.1px 58.3px -2.1px hsl(var(--shadow-color) / 0.38),
+      -37.3px 72.6px 91.8px -2.5px hsl(var(--shadow-color) / 0.38);
+  }
+
+@media only screen and (max-width: 1440px) {
+    nav {
+        justify-content: center;
+        position: sticky;
+    }
+
+    nav h1, #menu_navbar {
+        padding: 0;
+        margin: 0;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        justify-content: space-around;
+    }
+
+    nav .nav_menu {
+        position: absolute;
+        left: 100%;
+        top: 3.2rem;
+        flex-direction: column;
+        background-color: #99342f;
+        font-size: 1.2em;
+        width: 42%;
+        border-radius: 0 0 10px 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+  
+    nav .nav_menu.active {
+        left: 58%;
+        /* box-shadow:var(--shadow-elevation-medium); */
+    }
+  
+    .nav_menu li {
+        margin: 0.5rem 0;
+    }
+  
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+  
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+      background-color: #f0c95f;
+    }
+  
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+      background-color: #f0c95f;
+    }
+  }

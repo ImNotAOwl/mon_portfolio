@@ -5,23 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/responsive.css">
     <!-- <link rel="stylesheet" href="./style/carte.css"> -->
     <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/x-icon">
     <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/navbar.js" defer></script>
     <title>Portefolio Matthieu SIEGEL</title>
   </head>
   <body>
+
     <nav>
       <h1><a href="#top_accueil">Matthieu SIEGEL</a></h1>
-      <ul>
-        <li><a href="#top_accueil">Accueil</a></li>
-        <li><a href="#a_propos">A propos</a></li>
-        <li><a href="#parcours_pro">Parcours</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#veille">Veille Technologique</a></li>
-        <li><a href="#contact">Contact</a></li>
+
+      <ul class="nav_menu" id="menu_navbar">
+        <li class="top_accueil"><a class="home" href="#top_accueil" >Accueil</a></li>
+        <li class="a_propos"><a class="a_propos" href="#a_propos">A propos</a></li>
+        <li class="parcours_pro"><a class="nav_link" href="#parcours_pro">Parcours</a></li>
+        <li class="competences"><a class="nav_link" href="#competences">Compétences</a></li>
+        <li class="projets"><a class="nav_link" href="#projets">Projets</a></li>
+        <li class="veille"><a class="nav_link" href="#veille">Veille</a></li>
+        <li class="contact"><a class="nav_link" href="#contact">Contact</a></li>
       </ul>
+      
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
     </nav>
 
     <div class="content">
@@ -45,7 +55,7 @@
 
       <div class="main_content">
         <div class="a_propos_container">
-          <section class="zone" id="a_propos">
+          <section class="a_propos zone" id="a_propos">
             <h2>&lt; A propos /&gt;</h2>
             <p>
               Après <span class="exergue">11 années</span> en tant que
