@@ -719,7 +719,7 @@ h2 {
 }
 
 #contact {
-  padding-top: 0;
+  padding-top: 70;
 }
 
 .contact_content .follow_me {
@@ -808,7 +808,13 @@ h2 {
   background-color:rgba(255, 255, 255, 0.801);
   font-family: Poppins, sans-serif;
   padding-left: 10px;
+  transition: ease-in 0.4s;
+  resize: none;
 }
+
+.contact_container .contact_content .formulaire input:focus, textarea:focus {
+  box-shadow: var(--shadow-elevation-medium);
+}      
 
 textarea {
   /* font-size: 1.8em; */
@@ -817,13 +823,15 @@ textarea {
 
 .contact_container .contact_content .formulaire input[type="submit"] {
   cursor: pointer;
+  color: #b83e3e;
   background-color: #eee8aa;
-  transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.08s;
 }
 
 .contact_container .contact_content .formulaire input[type="submit"]:hover {
-  cursor: pointer;
-  color: #b83e3e;
+  content: "";
+  border: #000000 2px solid;
+  box-shadow: var(--shadow-elevation-medium);
 }
 
 /* -----------------------------FOOTER------------------------ */
