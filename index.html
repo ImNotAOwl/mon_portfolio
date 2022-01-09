@@ -857,7 +857,10 @@
               <div class="contact_form">
                 <h3>Envoyer un message</h3>
 
-                <form action="" method="post" class="formulaire">
+                <form action="https://formsubmit.co/789f58b89bd33df2c618bf9043752e72" method="post" class="formulaire">
+
+                  <input type="hidden" name="_subject" value="Email depuis mon Portfolio">
+                  <input type="hidden" name="_template" value="table">
 
                   <label for="prenom">
                     <p>Votre prénom</p>
@@ -873,7 +876,7 @@
 
                   <label for="mail">
                     <p>Votre adresse e-mail</p>
-                    <input type="text" name="mail" id="mail" required>
+                    <input type="email" name="mail" id="mail" required>
                   </label>
                   
 
@@ -881,6 +884,8 @@
                     <p>Votre message</p>
                     <textarea name="message" id="message" cols="30" rows="10" required></textarea>
                   </label>
+
+                  <input type="submit" value="Envoyer">
                   
                 </form>
               </div>
@@ -957,6 +962,7 @@
             </svg>
           </a>
         </div>
+
       </div>
     </div>
     <footer>

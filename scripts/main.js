@@ -3,6 +3,7 @@ const nom =document.querySelector("#nom");
 const email = document.querySelector("#mail");
 const message = document.querySelector("#message");
 
+/*-----------------------Animation Formulaire------------------------ */
 const addActiveInput = (e) => {
     if (e.target.value != "") {
         e.target.parentNode.classList.add("active_input");     
