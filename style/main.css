@@ -26,8 +26,6 @@ a:link, a:visited, a:hover, a:active {
 html {
   overflow-y: scroll;
   scroll-behavior: smooth; /* défilement doux quand on appuie sur un bouton de la navbar, obligé le l'appliquer sur tout le html */
-  overflow-x: hidden;
-
 }
 
 body {
@@ -53,11 +51,12 @@ body::-webkit-scrollbar-thumb {
 nav {
   background: url("../assets/img/banniere_portfolio_accueil.jpg") 70%;
   font-family: Josephin, sans-serif;
-  position: sticky;
+  position: fixed;
   top: 0;
   /* border-bottom: rgb(255, 255, 255) solid 1px; */
-  width: auto;
+  width: 100%;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
