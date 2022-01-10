@@ -34,7 +34,7 @@ body {
   background-color: #ffeedd;
   margin: 0;
   color: rgb(0, 0, 0);
-  /* overflow: hidden; */
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
