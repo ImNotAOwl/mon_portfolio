@@ -31,6 +31,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+p {
+  font-size: 0.8em;
+}
+
     nav {
         justify-content: space-around;
     }
