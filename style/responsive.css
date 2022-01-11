@@ -93,6 +93,12 @@
     padding: 2px;
   }
 
+  .content .social a svg:hover {
+    height: 30px;
+    width: 30px;
+    padding: 2px;
+  }
+
   .content .social a {
     height: 20px;
     width: 20px;
