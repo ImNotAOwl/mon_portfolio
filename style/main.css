@@ -19,8 +19,8 @@
     -37.3px 72.6px 91.8px -2.5px hsl(var(--shadow-color) / 0.38);
 }
 
-a:link, a:visited, a:hover, a:active {
-  color: #fff;
+a:visited {
+  color: inherit;
 }
 
 html {
@@ -337,7 +337,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   background-color: #c0554f;
-  /* width: 100%; */
+  width: 100%;
 }
 
 #a_propos {
@@ -417,7 +417,7 @@ h2 {
   /* Met le background en blanc pour et en linear gradient pour une joli transion quand on passe la souris apr-dessus */
   margin: 5px;
   border-top: 3px solid rgb(187, 52, 52);
-  width: 31%;
+  max-width: 400px;
   min-height: 200px;
   box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
     0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
@@ -437,7 +437,7 @@ h2 {
 }
 
 .zone div .new_gallery_emploi {
-  width: 45%;
+  max-width: 580px;
 }
 
 .zone div .gallery_emploi h3 {
@@ -549,7 +549,7 @@ h2 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 20px 20px;
+  margin: 20px 12px 20px 0;
 }
 
 #competences .skills .skill {
@@ -559,7 +559,7 @@ h2 {
   align-items: center;
   width: 8rem;
   height: 8rem;
-  margin: 10px 20px;
+  margin: 10px 19px;
   border-radius: 50%;
   background-color: #fff;
   box-shadow: inset var(--shadow-elevation-medium);
@@ -789,13 +789,13 @@ h2 {
   width: 100%;
   color: #e6e6e6;
   background-color: #b83e3e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 #contact {
-  padding-top: 70;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact_content .follow_me {
@@ -860,7 +860,6 @@ h2 {
 }
 
 
-
 .contact_container .contact_content {
   display: flex;
   flex-direction: row;
@@ -909,7 +908,7 @@ h2 {
 
 .contact_container .contact_content .formulaire input, textarea {
   position: relative;
-  min-width: 500px;
+  max-width: 500px;
   min-height: 40px;
   font-size: 1.4em;
   margin-bottom: 40px;

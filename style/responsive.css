@@ -139,8 +139,120 @@
     min-width: auto;
   }
 
+  .ancien_parcours {
+    gap: 20px;
+  }
+
   #parcours_pro p {
     font-size: 0.9em;
   }
+
+  .zone div .gallery_emploi .description li {
+    font-size: 14px;
+  }
+
+  #btn_synthese {
+    font-size: 1em;
+  }
+  
+  #btn_synthese:hover {
+    font-size: 1em;
+    color: rgb(187, 52, 52);
+    background-color: initial;
+  }
+
+  #competences h2 {
+    padding: 0 64px;
+  }
+
+  #competences .skills .skill {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  #competences .skills .skill img {
+    width: 2rem;
+    height: auto;
+  }
+
+  #competences .skills .skill h4 {
+    font-size: 0.8em;
+  }
+
+#projets h2 {
+  text-align: center;
+}
+
+  #projets .intro {
+    font-size: 0.9em;
+    margin: 20px 40px 0 30px;
+  }
+
+  .projects_cards .card .entete_dossier h4 {
+    font-size: 1.1em;
+    margin-right: 0;
+  }
+
+  .projects_cards .card {
+  margin: 20px 40px 0 30px;
+  }
+
+  #projets .intro {
+    font-size: 0.9em;
+    margin: 20px 40px 0 30px;
+  }
+
+  #projets .proj_content .description {
+    font-size: 0.9em;
+  }
+
+  .projects_cards .proj_content .content_tech {
+    gap: 10px;
+  }
+
+#veille {
+  padding-top: 0;
+}
+
+  #veille .intro, #veille p {
+    font-size: 0.9em;
+    /* margin: 20px 40px 0 30px; */
+  }
+
+  .veille_container #veille h3 {
+    margin-left: 0;
+    font-size: 1.1em;
+  }
+
+  .veille_container .article_veille iframe {
+width: 100%
+  }
+
+  .contact_border_up {
+    width: 100%;
+    height: 330px;
+  }
+
+  #contact {
+    padding-top: 0;
+  }
+
+ #contact p {
+    font-size: 0.9em;
+  }
+
+  .contact_container .contact_content .follow_me {
+    margin-bottom: 20px;
+  }
+
+  .contact_container .contact_content .follow_me h3 {
+    margin-bottom: 20px;
+  }
+
+  .contact_container .contact_content h3 {
+    text-align: center;
+  }
+
+
 
 }
