@@ -250,14 +250,15 @@
   .contact_container .contact_content .formulaire {
     align-items: center;
     align-content: center;
+    align-content: center;
   }
 
   .contact_container .contact_content .formulaire input, textarea {
     width: 100%;
   }
 
-  .contact_container .contact_content .formulaire textarea {
-    padding-left: 0;
+  .contact_container .contact_content .formulaire label,  .contact_container .contact_content .formulaire input[type="submit"] {
+    padding: 0 30px;
   }
 
   footer p {
