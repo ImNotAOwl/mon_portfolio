@@ -252,8 +252,11 @@
     align-content: center;
   }
 
-  .contact_container .contact_content .formulaire textarea {
+  .contact_container .contact_content .formulaire input, textarea {
     width: 100%;
+  }
+
+  .contact_container .contact_content .formulaire textarea {
     padding-left: 0;
   }
 
