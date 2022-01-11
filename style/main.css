@@ -786,6 +786,11 @@ h2 {
 }
 
 .contact_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   width: 100%;
   color: #e6e6e6;
   background-color: #b83e3e;
@@ -796,6 +801,10 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#contact h2 {
+  align-self: flex-start;
 }
 
 .contact_content .follow_me {
@@ -867,6 +876,7 @@ h2 {
   align-items: flex-start;
   align-content: center;
   flex-wrap: wrap;
+  gap: 50px;
 }
 
 .contact_container .contact_content h3 {
@@ -882,7 +892,7 @@ h2 {
 .contact_container .contact_content .formulaire {
   display: flex;
   flex-direction: column;
-  justify-content: stretch;
+  justify-content: space-around;
   align-items: stretch;
   align-content: stretch;
 }
