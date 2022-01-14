@@ -282,7 +282,7 @@ nav ul li a {
 
 #accueil {
   margin-left: 100px;
-  padding: 0 30px 0 0;
+  padding: 70px 30px 0 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -388,20 +388,10 @@ h2 {
   padding: 15px 0;
 }
 
-.ancien_parcours {
+.ancien_parcours, .nouveau_parcours, .ppe {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-content: center;
-  align-items: stretch;
-  margin-bottom: 20px;
-  height: auto;
-}
-
-.nouveau_parcours {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   align-content: center;
   align-items: stretch;
   margin-bottom: 20px;
@@ -440,6 +430,10 @@ h2 {
   max-width: 580px;
 }
 
+#parcours_pro h3 {
+  text-align: center;
+}
+
 .zone div .gallery_emploi h3 {
   align-self: center;
   margin: 0;
@@ -467,8 +461,9 @@ h2 {
   font-family: Poppins, sans-serif;
 }
 
-.zone div .gallery_emploi .description li {
+.zone div .gallery_emploi .description li, .zone div .gallery_emploi .description p {
   position: relative;
+  margin: 0;
   padding: 2px 10px 10px 25px;
   text-align: left;
   margin-left: 5px;
@@ -483,6 +478,67 @@ h2 {
   margin-left: 8px;
   left: 0;
 }
+
+
+
+/* ----------------------------------BTN DROPDOWN------------------------ */
+
+.dropbtn {
+  background-color: rgb(187, 52, 52);
+  color: blanchedalmond;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 1em;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0 12px 12px 0;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 1em
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: rgb(187, 52, 52);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  min-width: 100px;
+  border-radius: 1em;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: blanchedalmond}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: rgb(187, 52, 52);
+}
+
+
+
+
+
+
 
 #btn_synthese {
   display: inline-block;
