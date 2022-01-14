@@ -1,0 +1,26 @@
+h1{
+    font-family: "Aharoni", sans-serif;
+}
+
+h3{
+    font-family: "Calibri", sans-serif;
+    text-decoration: underline;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+}
+
+div{
+    border: solid; 
+    width : 800px;
+    flex-direction: column;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: rgb(191, 212, 216);
+}
