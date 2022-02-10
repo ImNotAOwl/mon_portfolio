@@ -1,0 +1,166 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+}
+
+.titre_pokedex {
+    padding: 2% 0;
+    text-align: center;
+    color: #f1f1f1;
+    font-size: 2.4em;
+}
+
+.recherche {
+    position: relative;
+    max-width: 700px;
+    width: 70%;
+    min-width: 450px;
+    margin: 10px auto 30px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#champs_recherche {
+    position: relative;
+    width: 700px;
+    height: 50px;
+    font-size: 1.6em;
+    border-radius: 0.2em;
+    padding: 5px 8px;
+}
+
+.recherche label {
+    color: rgba(0, 0, 0, 0.527);
+    position: absolute;
+    font-size: 1em;
+    padding-left: 10px;
+    z-index: 12;
+    cursor: text;
+    transition: ease-out 0.5s;
+}
+
+.recherche:focus-within label,
+.recherche.active_input label {
+    color: #f1f1f1;
+    font-size: 0.9em;
+    cursor: text;
+    transform: translateY(-40px);
+    transition: ease-in-out 0.5s;
+}
+
+
+.recherche input[type="submit"] {
+    /* position: absolute; */
+    height: 46px;
+    width: 99px;
+    outline: none;
+    border: none;
+    font-size: 1.1em;
+    background-color: cornflowerblue;
+    color: #f1f1f1;
+    border-radius: 0.2em;
+    transition: ease-out 0.3s;
+    align-self: flex-end;
+    margin: 0 10px 2px 5px;
+}
+
+.recherche input[type="submit"]:hover {
+    height: 46px;
+    width: 99px;
+    outline: none;
+    border: none;
+    font-size: 1.1em;
+    background-color: rgb(209, 141, 64);
+    color: #000000;
+    border-radius: 0.2em;
+    transition: ease-in 0.2s;
+    cursor: pointer;
+    margin: 0 10px 2px 5px;
+}
+
+/* Liste des carte */
+
+.poke_container {
+    width: 70%;
+    max-width: 1100px;
+    height: auto;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.liste_poke li {
+    width: 250px;
+    height: auto;
+    padding: 15px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.liste_poke h5 {
+    font-size: 19px;
+}
+
+.liste_poke p {
+    font-size: 18px;
+}
+
+
+/* animation loader */
+
+.loader {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.point {
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    animation: alternate monte 0.3s infinite;
+}
+
+.point:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.point:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.point:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+@keyframes monte {
+    100% {
+        transform: translateY(-30px);
+    }
+}
