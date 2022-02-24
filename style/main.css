@@ -81,12 +81,13 @@ h4 {
   font-family: Josephin, sans-serif;
 }
 
-p {
+p, li {
   font-family: Poppins, sans-serif;
   font-size: 1.3em;
   text-align: justify;
   word-wrap: break-word;
   width: auto;
+  list-style-type: none;
 }
 
 /* ----------------NAV BAR------------------------ */
@@ -427,8 +428,26 @@ h2 {
 }
 
 .zone div .new_gallery_emploi {
-  max-width: 580px;
+  max-width: 1300px;
 }
+
+.zone div .new_gallery_emploi .activite_comp {
+  display: flex;
+  flex-direction: row;
+}
+
+.zone div .new_gallery_emploi .activite_comp h4 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.zone div .new_gallery_emploi .activite_comp .comp {
+  max-width: 400px;
+}
+
+
+
+
 
 #parcours_pro h3 {
   text-align: center;
@@ -470,6 +489,19 @@ h2 {
   font-size: 18px;
   list-style-type: none;
   list-style-position: inside;
+}
+
+.zone div .new_gallery_emploi .activite_comp .comp ul {
+  padding: 0;
+}
+
+.zone div .new_gallery_emploi .activite_comp .comp li {
+  margin: 0;
+  padding: 0 10px 15px 10px;
+  text-align: left;
+  margin-left: 5px;
+  font-size: 18px;
+  list-style-type: none;
 }
 
 .zone div .gallery_emploi .description li::before {
@@ -534,20 +566,20 @@ h2 {
   background-color: rgb(187, 52, 52);
 }
 
-
-
-
-
-
+.btn_pdf {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 
 #btn_synthese {
   display: inline-block;
   font-size: 1.5em;
-  margin-top: 20px;
+  margin: 20px 0 20px 0;
   padding: 15px;
   border: 2px solid rgb(187, 52, 52);
   color: rgb(187, 52, 52);
-  border-radius: 2em;
+  border-radius: 0.5em;
   transition: ease-out 0.2s;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -555,7 +587,7 @@ h2 {
 #btn_synthese:hover {
   display: inline-block;
   font-size: 1.5em;
-  margin-top: 20px;
+  margin: 20px 0 20px 0;
   padding: 15px;
   border: 2px solid #bb3434;
   color: #ffeedd;
