@@ -23,6 +23,10 @@ a:visited {
   color: inherit;
 }
 
+a {
+  color: #000;
+}
+
 html {
   overflow-y: scroll;
   scroll-behavior: smooth; /* défilement doux quand on appuie sur un bouton de la navbar, obligé le l'appliquer sur tout le html */
