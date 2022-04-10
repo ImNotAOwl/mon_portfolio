@@ -1,8 +1,8 @@
 # Mon portfolio
 <img src="./assets/img/mon_portfolio.png">
 
-
-Voici le portfolio développer pour mon année de BTS SIO option SLAM.
+<span style="font-size:20px">
+Voici le portfolio développer pour mon année de BTS SIO option SLAM.  
 Entièrement fait main, code and design by myself ! :smiley:
 
 Langages de développement :    
@@ -10,5 +10,6 @@ Langages de développement :
 |-------|------|------|
 
 
-Pour le voir il suffit de cliquer :point_right: [Portfolio Matthieu SIEGEL](https://imnotaowl.github.io/mon_portfolio/ "Portfolio Matthieu SIEGEL"):point_left:
+Pour le voir il suffit de cliquer :point_right: [Portfolio Matthieu SIEGEL](https://imnotaowl.github.io/mon_portfolio/ "Portfolio Matthieu SIEGEL"):point_left:  
 Ou aller sur Environments -> github-pages ci-contre :arrow_forward:
+</span>
