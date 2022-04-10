@@ -437,7 +437,7 @@ h2 {
 }
 
 .zone div .new_gallery_emploi {
-  max-width: 950px;
+  max-width: 1145px;
   margin: 30px 0;
   z-index: auto;
 }
@@ -454,7 +454,11 @@ h2 {
 }
 
 .zone div .new_gallery_emploi .activite_comp .activite {
-  max-width: 800px;
+  max-width: 917px;
+}
+
+#stage_hp, #stage_cfr, #ppe_m2l {
+  align-items: flex-start;
 }
 
 
