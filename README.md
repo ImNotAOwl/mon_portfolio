@@ -2,7 +2,7 @@
 <img src="./assets/img/mon_portfolio.png">
 
 <span style="font-size:20px">
-Voici le portfolio développer pour mon année de BTS SIO option SLAM.  
+Voici le portfolio développer pour mon année de BTS SIO option SLAM.    
 Entièrement fait main, code and design by myself ! :smiley:
 
 Langages de développement :    
