@@ -262,7 +262,7 @@ nav ul li a {
   background-color: #3b5999;
 }
 
-.content .social a #github:hover {
+.content .social a .github:hover, .drop_git .logo_git .github:hover {
   background-color: #6e5494;
 }
 
@@ -535,6 +535,29 @@ h2 {
   width: 100%;
 }
 
+.drop_git {
+  display: flex;
+  flex-direction: row;
+}
+
+.drop_git .logo_git{
+  margin-left: 15px;
+  width: 40px;
+  height: 40px;
+}
+
+.drop_git svg {
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #bb3434;
+  border-radius: 100%;
+  transition: ease-in-out 0.1s;
+}
+
+.drop_git svg:hover {
+  fill: #ffffff;
+}
 
 /* ----------------------------------BTN DROPDOWN------------------------ */
 
