@@ -683,9 +683,15 @@ h2 {
   background: url(../assets/img/border_skills3.png);
 }
 
-#competences h2, #competences h3 {
+#competences h2 {
   padding: 0 20px;
   margin-bottom: 50px;
+  color: #fff;
+}
+
+#competences h3 {
+  font-size: 2em;
+  padding: 0 20px;
   color: #fff;
 }
 
