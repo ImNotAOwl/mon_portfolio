@@ -683,7 +683,7 @@ h2 {
   background: url(../assets/img/border_skills3.png);
 }
 
-#competences h2 {
+#competences h2, #competences h3 {
   padding: 0 20px;
   margin-bottom: 50px;
   color: #fff;
@@ -727,6 +727,14 @@ h2 {
   height: 210px;
   background: url(../assets/img/border_down_skills2.png);
   z-index: 2;
+}
+
+.nom_skill {
+  text-align: center;
+}
+
+#competences .certif {
+  text-align: center;
 }
 
 /* --------------------------------PROJETS------------------------ */
